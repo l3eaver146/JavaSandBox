@@ -1,0 +1,63 @@
+2020-12-10 21:43:43 DEBUG Logger:15 - Creating driver
+2020-12-10 21:43:48 DEBUG Logger:15 - Setup complited
+2020-12-10 21:43:48 DEBUG Logger:19 - 
+
+ Step number 1 : Trying to open application 
+2020-12-10 21:43:50 DEBUG Logger:19 - 
+
+ Assert : Main page opened? 
+2020-12-10 21:43:50 DEBUG Logger:15 - Waiting for clickable : Install steam button
+2020-12-10 21:43:51 DEBUG Logger:15 - Element Install steam buttonis visible : true
+2020-12-10 21:43:51 DEBUG Logger:19 - 
+
+ Step number 2 : Trying to open action game page 
+2020-12-10 21:43:51 DEBUG Logger:15 - Waiting for displayed : Browse button
+2020-12-10 21:43:51 DEBUG Logger:15 - Click Browse button
+2020-12-10 21:43:51 DEBUG Logger:15 - Waiting for clickable : Action button
+2020-12-10 21:43:51 DEBUG Logger:15 - Click Action button
+2020-12-10 21:43:52 DEBUG Logger:19 - 
+
+ Assert : Action game page opened? 
+2020-12-10 21:43:52 DEBUG Logger:15 - Waiting for displayed : Page header
+2020-12-10 21:43:52 DEBUG Logger:15 - Get inner text of Page header
+2020-12-10 21:43:52 DEBUG Logger:19 - 
+
+ Step number 3 : Trying to pen top sellers tab 
+2020-12-10 21:43:52 DEBUG Logger:15 - Click TopSellers button
+2020-12-10 21:43:52 DEBUG Logger:19 - 
+
+ Step number 4 : Trying to open game with maximal discount page 
+2020-12-10 21:43:52 DEBUG Logger:15 - Waiting for clickable : Games tab list
+2020-12-10 21:43:58 DEBUG Logger:19 - 
+
+ Assert: Game page opened?
+2020-12-10 21:43:58 DEBUG Logger:15 - Waiting for clickable : Community hub button
+2020-12-10 21:43:58 DEBUG Logger:15 - Element Community hub buttonis visible : true
+2020-12-10 21:43:58 DEBUG Logger:19 - 
+
+ Assert : Game data correct? 
+2020-12-10 21:43:58 DEBUG Logger:15 - Waiting for clickable : Discount
+2020-12-10 21:43:58 DEBUG Logger:15 - Get inner text of Discount price
+2020-12-10 21:43:58 DEBUG Logger:15 - Get inner text of Discount
+2020-12-10 21:43:58 DEBUG Logger:15 - Get inner text of Price
+2020-12-10 21:43:58 DEBUG Logger:15 - Get inner text of Header
+2020-12-10 21:43:58 DEBUG Logger:19 - 
+
+ Step number 5 : Trying to open installation page
+2020-12-10 21:43:58 DEBUG Logger:15 - Click Install steam button
+2020-12-10 21:43:59 DEBUG Logger:19 - 
+
+ Assert : Installation page opened?
+2020-12-10 21:43:59 DEBUG Logger:15 - Waiting for clickable : Install steam button
+2020-12-10 21:43:59 DEBUG Logger:15 - Element Install steam buttonis visible : true
+2020-12-10 21:43:59 DEBUG Logger:19 - 
+
+ Step number 6 : Trying install steam
+2020-12-10 21:43:59 DEBUG Logger:15 - Click Install steam button
+2020-12-10 21:43:59 DEBUG Logger:15 - Waiting for SteamSetup.exe will appear in C:\Users\v.praskov\JavaSandBox\SteamTests\framework\src\main\resources\
+2020-12-10 21:43:59 DEBUG Logger:15 - Trying to find SteamSetup.exe in C:\Users\v.praskov\JavaSandBox\SteamTests\framework\src\main\resources\
+2020-12-10 21:43:59 DEBUG Logger:19 - 
+
+ Assert : SteamSetup appeared? 
+2020-12-10 21:43:59 DEBUG Logger:15 - Steps failed : 0
+2020-12-10 21:43:59 DEBUG Logger:15 - Closing driver

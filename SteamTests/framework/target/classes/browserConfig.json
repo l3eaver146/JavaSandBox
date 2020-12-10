@@ -1,0 +1,10 @@
+{
+  "browser": "chrome",
+  "protocol": "http://",
+  "server": "",
+  "resource": "store.steampowered.com/",
+  "path": "/framework/resources/",
+  "localization": "en",
+  "waitingTime": 120,
+  "apiUrl": ""
+}
