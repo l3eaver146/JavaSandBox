@@ -5,6 +5,6 @@
   "resource": "store.steampowered.com/",
   "path": "/framework/resources/",
   "localization": "en",
-  "waitingTime": 120,
+  "waitingTime": 5,
   "apiUrl": ""
 }

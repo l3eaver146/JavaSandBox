@@ -6,24 +6,22 @@ import java.util.Set;
 
 public class Browser {
     private Browser() {
-        this.driver = BrowserFabric.initBrowser();
+        this.driver = BrowserFactory.initBrowser();
     }
 
     private WebDriver driver;
     private static Browser instance;
-
-    public static WebDriver getDriver() {
-
-        return instance.driver;
-    }
+    private static final int LAST_WIDOW_HANDLE_NUMBER = -1;
+    private static final int FIRST_WIDOW_HANDLE_NUMBER = 0;
 
     public static WebDriver getInstance() {
-        if (instance == null)
+        if (instance == null) {
             instance = new Browser();
+        }
         return instance.driver;
     }
 
-    public static void loadApplication(String url) {
+    public static void openUrl(String url) {
         instance.driver.get(url);
     }
 
@@ -31,21 +29,21 @@ public class Browser {
         instance.driver.quit();
     }
 
-    public static void refreshCurrentPage() {
+    public static void refreshPage() {
         instance.driver.navigate().refresh();
     }
 
     public static void switchToLastHandle() {
         Set<String> windowHandles = instance.driver.getWindowHandles();
-        instance.driver.switchTo().window(windowHandles.toArray()[getWindowHandlesCount() - 1].toString());
+        instance.driver.switchTo().window(windowHandles.toArray()[getWindowHandlesCount() - LAST_WIDOW_HANDLE_NUMBER].toString());
     }
 
     public static void switchToDefaultContent() {
         Set<String> windowHandles = instance.driver.getWindowHandles();
-        instance.driver.switchTo().window(windowHandles.toArray()[0].toString());
+        instance.driver.switchTo().window(windowHandles.toArray()[FIRST_WIDOW_HANDLE_NUMBER].toString());
     }
 
-    public static void closeCurrentPage() {
+    public static void closeTab() {
         instance.driver.close();
     }
 

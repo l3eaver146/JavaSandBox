@@ -12,7 +12,7 @@ public class TabList extends BaseElement {
     }
 
     public List<WebElement> getComponents() {
-        return Browser.getDriver().findElements(this.getLocator());
+        return Browser.getInstance().findElements(this.getLocator());
     }
 
     public void clickSpecificElement(int position) {
@@ -21,6 +21,6 @@ public class TabList extends BaseElement {
     }
 
     public boolean isTabListOpened() {
-        return Browser.getDriver().findElements(this.getLocator()).size() > 0;
+        return Browser.getInstance().findElements(this.getLocator()).size() > 0;
     }
 }

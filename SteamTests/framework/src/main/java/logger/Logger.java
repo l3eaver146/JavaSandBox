@@ -7,8 +7,13 @@ import org.apache.log4j.Priority;
 public class Logger {
     private static org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(Logger.class);
 
-    public static void initLogger() {
+    private Logger() {
+
+    }
+
+    public static org.apache.log4j.Logger getLogger() {
         BasicConfigurator.configure();
+        return logger;
     }
 
     public static void debug(String message) {
@@ -16,10 +21,12 @@ public class Logger {
     }
 
     public static void step(String message) {
-        logger.log(Priority.DEBUG, message);
+        logger.info(message);
     }
 
     public static void error(String message) {
         logger.log(Priority.ERROR, message);
     }
+
+    public static void info(String message) { logger.info(message);}
 }

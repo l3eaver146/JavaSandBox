@@ -1,18 +1,13 @@
 package pages;
 
-import elements.Button;
 import org.openqa.selenium.By;
-import waitUtil.WaitUtil;
 
-public class InstallationPage {
-    private final Button installSteamButton = new Button(By.xpath("//a[@class='about_install_steam_link']"), "Install steam button");
-
-    public Button getInstallSteamButton() {
-        return installSteamButton;
+public class InstallationPage extends Page {
+    public InstallationPage() {
+        super(By.xpath("//div[contains(text(),'Steam is the ultimate destination for playing, discussing, and creating games.')]"), "Installation page");
     }
 
-    public boolean isInstallationPageOpened() {
-        WaitUtil.waitForClickable(installSteamButton);
-        return installSteamButton.isVisible();
+    public void clickInstallSteamButton() {
+        installButton.click();
     }
 }

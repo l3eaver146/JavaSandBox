@@ -1,36 +1,14 @@
 package browserFactory;
 
 public class Config {
-    private final String browser;
-    private final String server;
-    private final String resource;
-    private final String path;
-    private final String localization;
-    private final int waitingTime;
-    private final String apiUrl;
-    private final String protocol;
-
-    public Config(String browser, String server, String resource, String path, String localization, int waitingTime, String apiUrl, String protocol) {
-        this.apiUrl = apiUrl;
-        this.localization = localization;
-        this.browser = browser;
-        this.server = server;
-        this.resource = resource;
-        this.path = path;
-        this.waitingTime = waitingTime;
-        this.protocol = protocol;
-    }
-
-    public Config() {
-        this.apiUrl = null;
-        this.localization = null;
-        this.browser = null;
-        this.server = null;
-        this.resource = null;
-        this.path = null;
-        this.waitingTime = 0;
-        this.protocol = null;
-    }
+    private String browser;
+    private String server;
+    private String resource;
+    private String path;
+    private String localization;
+    private int waitingTime;
+    private String apiUrl;
+    private String protocol;
 
     public String getBrowser() {
         return browser;

@@ -2,8 +2,8 @@ package elements;
 
 import org.openqa.selenium.By;
 
-public class Text extends BaseElement {
-    public Text(By locator, String name) {
+public class Label extends BaseElement {
+    public Label(By locator, String name) {
         super(locator, name);
     }
 }
