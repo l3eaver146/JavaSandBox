@@ -14,11 +14,9 @@ public enum Browsers {
     private final String title;
 
     public static Browsers getByName(String name) {
-        for (Browsers browser : Browsers.values()) {
-            if (browser.title.equalsIgnoreCase(name)) {
-                return browser;
-            }
-        }
-        return null;
+       return Arrays.stream(Browsers.values())
+               .filter(element -> element.title.equalsIgnoreCase(name))
+               .findFirst()
+               .orElseThrow(()-> new IllegalArgumentException((String.format("Unsupported type %s",name))));
     }
 }

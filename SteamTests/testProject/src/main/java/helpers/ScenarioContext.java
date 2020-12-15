@@ -1,24 +1,20 @@
- package helpers;
+package helpers;
 
- import java.util.HashMap;
- import java.util.Map;
+import java.util.HashMap;
+import java.util.Map;
 
- public class ScenarioContext {
-     private final Map<String, Object> scenarioContext;
+public class ScenarioContext {
+    private static final Map<String, Object> scenarioContext = new HashMap<>();
 
-     public ScenarioContext() {
-         scenarioContext = new HashMap<>();
-     }
+    public static void setContext(String key, Object value) {
+        scenarioContext.put(key, value);
+    }
 
-     public void setContext(String key, Object value) {
-         scenarioContext.put(key, value);
-     }
+    public static Object getContext(String key) {
+        return scenarioContext.get(key);
+    }
 
-     public Object getContext(String key) {
-         return scenarioContext.get(key);
-     }
-
-     public Boolean isContains(String key) {
-         return scenarioContext.containsKey(key);
-     }
- }
+    public static Boolean isContains(String key) {
+        return scenarioContext.containsKey(key);
+    }
+}

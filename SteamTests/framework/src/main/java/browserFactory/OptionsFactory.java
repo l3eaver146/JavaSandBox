@@ -1,19 +1,19 @@
 package browserFactory;
 
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.WebDriver;
+import logger.Logger;
 
 public class OptionsFactory {
-    public Capabilities setOptions(Browsers browsers) {
-        switch (browsers){
-            case CHROME:{
-                return new ChromeOptions().getChromeOptions();
+    public <T> T setOptions(Browsers browsers) {
+        switch (browsers) {
+            case CHROME -> {
+                return (T) new ChromeConfig().getChromeOptions();
             }
-            case FIREFOX:{
-                return new FirefoxOptions().getFirefoxOptions();
+            case FIREFOX -> {
+                return (T) new FirefoxOptions().getFirefoxOptions();
             }
-            default: {
-                return null;
+            default -> {
+                Logger.error("Options settings failed");
+                throw new RuntimeException();
             }
         }
     }

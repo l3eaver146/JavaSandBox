@@ -1,7 +1,5 @@
 package logger;
 
-
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Priority;
 
 public class Logger {
@@ -9,11 +7,6 @@ public class Logger {
 
     private Logger() {
 
-    }
-
-    public static org.apache.log4j.Logger getLogger() {
-        BasicConfigurator.configure();
-        return logger;
     }
 
     public static void debug(String message) {

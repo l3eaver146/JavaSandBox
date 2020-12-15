@@ -2,7 +2,7 @@ package pages;
 
 import elements.Button;
 import org.openqa.selenium.By;
-import pages.elements.GameBlockList;
+import pages.elements.GameBlockListForm;
 
 public class ActionGamesPage extends Page {
     public ActionGamesPage() {
@@ -10,10 +10,9 @@ public class ActionGamesPage extends Page {
     }
 
     private final Button topSellersButton = new Button(By.xpath("//div[@id='tab_select_TopSellers']"), "TopSellers button");
-    private final GameBlockList gameBlockList = new GameBlockList();
 
-    public GameBlockList getGameBlockList() {
-        return gameBlockList;
+    public GameBlockListForm getGameBlockList() {
+        return new GameBlockListForm();
     }
 
     public void clickTopSellersButton() {

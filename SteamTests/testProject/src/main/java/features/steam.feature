@@ -1,6 +1,5 @@
 Feature: Steam feature
 
-  @all
   Scenario: Test steam shop
     Given I launch application
     When I open action games page

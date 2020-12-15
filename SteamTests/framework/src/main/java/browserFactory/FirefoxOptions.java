@@ -8,10 +8,10 @@ public class FirefoxOptions {
         return setCapabilities(profile);
     }
 
-    private org.openqa.selenium.firefox.FirefoxOptions setCapabilities(org.openqa.selenium.firefox.FirefoxOptions profile){
+    private org.openqa.selenium.firefox.FirefoxOptions setCapabilities(org.openqa.selenium.firefox.FirefoxOptions profile) {
         profile.setCapability("browser.download.folderList", 2);
         profile.setCapability("browser.helperApps.neverAsk.saveToDisk", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-        profile.setCapability("intl.accept_languages", FileUtil.getFrameworkConfig().getLocalization());
+        profile.setCapability("intl.accept_languages", FileUtil.getApplicationConfig().getLocalization());
         return profile;
     }
 }

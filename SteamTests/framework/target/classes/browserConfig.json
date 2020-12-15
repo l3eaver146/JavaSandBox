@@ -1,10 +1,14 @@
 {
-  "browser": "chrome",
-  "protocol": "http://",
-  "server": "",
-  "resource": "store.steampowered.com/",
-  "path": "/framework/resources/",
-  "localization": "en",
-  "waitingTime": 5,
-  "apiUrl": ""
+  "FrameworkConfig": {
+    "browser": "chrome",
+    "pathToResources": "/framework/resources/",
+    "waitingTime": 5
+  },
+  "ApplicationConfig": {
+    "protocol": "https://",
+    "server": "",
+    "resource": "store.steampowered.com/",
+    "localization": "en",
+    "baseUrl": ""
+  }
 }

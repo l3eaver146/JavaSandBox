@@ -1,23 +1,27 @@
 package browserFactory;
 
 import fileUtil.FileUtil;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ChromeOptions {
-    public org.openqa.selenium.chrome.ChromeOptions getChromeOptions() {
-        return setArguments(setCapabilities(setPreferences()));
+public class ChromeConfig {
+    public ChromeOptions getChromeOptions() {
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions= setPreferences(chromeOptions);
+        chromeOptions = setCapabilities(chromeOptions);
+        chromeOptions = setArguments(chromeOptions);
+        return chromeOptions;
     }
 
-    private org.openqa.selenium.chrome.ChromeOptions setCapabilities(org.openqa.selenium.chrome.ChromeOptions chromeConfig) {
-        chromeConfig.setCapability("intl.accept_languages", FileUtil.getFrameworkConfig().getLocalization());
+    private ChromeOptions setCapabilities(ChromeOptions chromeConfig) {
+        chromeConfig.setCapability("intl.accept_languages", FileUtil.getApplicationConfig().getLocalization());
         return chromeConfig;
     }
 
-    private org.openqa.selenium.chrome.ChromeOptions setPreferences() {
+    private ChromeOptions setPreferences(ChromeOptions chromeConfig) {
         String fullPath = FileUtil.getPathToDownloadDirectory();
-        org.openqa.selenium.chrome.ChromeOptions chromeConfig = new org.openqa.selenium.chrome.ChromeOptions();
         Map<String, Object> prefs = new HashMap<String, Object>();
         prefs.put("download.default_directory", fullPath);
         prefs.put("download.prompt_for_download", false);
@@ -27,7 +31,7 @@ public class ChromeOptions {
         return chromeConfig;
     }
 
-    private org.openqa.selenium.chrome.ChromeOptions setArguments(org.openqa.selenium.chrome.ChromeOptions chromeConfig) {
+    private ChromeOptions setArguments(ChromeOptions chromeConfig) {
         chromeConfig.addArguments("--safebrowsing-disable-download-protection");
         chromeConfig.addArguments("safebrowsing-disable-extension-blacklist");
         return chromeConfig;
