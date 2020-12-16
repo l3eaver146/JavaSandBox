@@ -1,0 +1,14 @@
+{
+  "FrameworkConfig": {
+    "browser": "chrome",
+    "pathToResources": "/framework/resources/",
+    "waitingTime": 5
+  },
+  "ApplicationConfig": {
+    "protocol": "https://",
+    "server": "",
+    "resource": "store.steampowered.com/",
+    "localization": "en",
+    "baseUrl": ""
+  }
+}

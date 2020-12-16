@@ -1,0 +1,86 @@
+2020-12-15 22:11:13 INFO  Logger:24 - Creating driver
+2020-12-15 22:11:19 INFO  Logger:24 - Setup complited
+2020-12-15 22:11:19 INFO  Logger:17 - 
+
+ Step number 1 : Trying to open application 
+2020-12-15 22:11:22 INFO  Logger:17 - 
+
+ Assert : Main page opened? 
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for displayed : Main page unique element
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for clickable : Main page unique element
+2020-12-15 22:11:22 INFO  Logger:24 - Element Main page unique elementis visible : true
+2020-12-15 22:11:22 INFO  Logger:17 - 
+
+ Step number 2 : Trying to open action game page 
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for displayed : Browse button
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for clickable : Browse button
+2020-12-15 22:11:22 INFO  Logger:24 - Click Browse button
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for displayed : Action button
+2020-12-15 22:11:22 INFO  Logger:24 - Waiting for clickable : Action button
+2020-12-15 22:11:22 INFO  Logger:24 - Click Action button
+2020-12-15 22:11:25 INFO  Logger:17 - 
+
+ Assert : Action game page opened? 
+2020-12-15 22:11:25 INFO  Logger:24 - Waiting for displayed : Action games page unique element
+2020-12-15 22:11:25 INFO  Logger:24 - Waiting for clickable : Action games page unique element
+2020-12-15 22:11:25 INFO  Logger:24 - Element Action games page unique elementis visible : true
+2020-12-15 22:11:25 INFO  Logger:17 - 
+
+ Step number 3 : Trying to pen top sellers tab 
+2020-12-15 22:11:25 INFO  Logger:24 - Waiting for displayed : TopSellers button
+2020-12-15 22:11:25 INFO  Logger:24 - Waiting for clickable : TopSellers button
+2020-12-15 22:11:25 INFO  Logger:24 - Click TopSellers button
+2020-12-15 22:11:25 INFO  Logger:17 - 
+
+ Step number 4 : Trying to open game with maximal discount page 
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for displayed :  Age page unique element
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for clickable :  Age page unique element
+2020-12-15 22:11:27 INFO  Logger:24 - Element  Age page unique elementis visible : true
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for displayed : Year button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for clickable : Year button
+2020-12-15 22:11:27 INFO  Logger:24 - Click Year button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for displayed : 2000 year button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for clickable : 2000 year button
+2020-12-15 22:11:27 INFO  Logger:24 - Click 2000 year button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for displayed : View page button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for clickable : View page button
+2020-12-15 22:11:27 INFO  Logger:24 - Click View page button
+2020-12-15 22:11:27 INFO  Logger:24 - Waiting for disappear : View page button
+2020-12-15 22:11:30 INFO  Logger:17 - 
+
+ Assert: Game page opened?
+2020-12-15 22:11:30 INFO  Logger:24 - Waiting for displayed : Personal game page unique element
+2020-12-15 22:11:30 INFO  Logger:24 - Waiting for clickable : Personal game page unique element
+2020-12-15 22:11:30 INFO  Logger:24 - Element Personal game page unique elementis visible : true
+2020-12-15 22:11:30 INFO  Logger:17 - 
+
+ Assert : Game data correct? 
+2020-12-15 22:11:30 INFO  Logger:24 - Get inner text of Discount price
+2020-12-15 22:11:30 INFO  Logger:24 - Get inner text of Discount
+2020-12-15 22:11:30 INFO  Logger:24 - Get inner text of Price
+2020-12-15 22:11:31 INFO  Logger:24 - Get inner text of Header
+2020-12-15 22:11:31 INFO  Logger:17 - 
+
+ Step number 5 : Trying to open installation page
+2020-12-15 22:11:31 INFO  Logger:24 - Waiting for displayed : Install steam button
+2020-12-15 22:11:31 INFO  Logger:24 - Waiting for clickable : Install steam button
+2020-12-15 22:11:31 INFO  Logger:24 - Click Install steam button
+2020-12-15 22:11:32 INFO  Logger:17 - 
+
+ Assert : Installation page opened?
+2020-12-15 22:11:32 INFO  Logger:24 - Waiting for displayed : Installation page unique element
+2020-12-15 22:11:33 INFO  Logger:24 - Waiting for clickable : Installation page unique element
+2020-12-15 22:11:33 INFO  Logger:24 - Element Installation page unique elementis visible : true
+2020-12-15 22:11:33 INFO  Logger:17 - 
+
+ Step number 6 : Trying install steam
+2020-12-15 22:11:33 INFO  Logger:24 - Waiting for displayed : Install steam button
+2020-12-15 22:11:33 INFO  Logger:24 - Waiting for clickable : Install steam button
+2020-12-15 22:11:33 INFO  Logger:24 - Click Install steam button
+2020-12-15 22:11:33 INFO  Logger:24 - Waiting for SteamSetup.exe will appear in C:\Users\v.praskov\JavaSandBox\SteamTests\framework\src\main\resources\
+2020-12-15 22:11:33 INFO  Logger:24 - Trying to find SteamSetup.exe in \framework\src\main\resources\
+2020-12-15 22:11:33 INFO  Logger:17 - 
+
+ Assert : SteamSetup appeared? 
+2020-12-15 22:11:33 INFO  Logger:24 - Steps failed : 0
+2020-12-15 22:11:33 INFO  Logger:24 - Closing driver
